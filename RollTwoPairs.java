@@ -1,5 +1,3 @@
-import textio.TextIO;
-
 public class RollTwoPairs {
     public static void main(String[] args){
         PairOfDice dice1 = new PairOfDice();
@@ -38,10 +36,6 @@ class PairOfDice{
 
     }
 
-    public PairOfDice(int val1, int val2){
-        die1 = val1;
-        die2 = val2;
-    }
 
     private void roll(){
         die1 = (int) (Math.random() * 6) + 1;
@@ -56,9 +50,5 @@ class PairOfDice{
         int total = die1 + die2;
         return total;
     }
-
-    public String getRoll(){
-        return String.valueOf(die1) + " and " + String.valueOf(die2);
-    }
-
+    
 }
